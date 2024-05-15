@@ -106,7 +106,7 @@ async function mintNFT() {
         uri: 'https://raw.githubusercontent.com/nguyenvietca/solana-bootcamp-summer-2024/main/assets/sbs-token.json',
         name: 'My NFT nvca',
         symbol: 'MNFT nvca',
-        sellerFeeBasisPoints: 1000, // phí bản quyền 10%
+        sellerFeeBasisPoints: 1000, // 10%
         creators: [{ address: payer.publicKey, share: 100 }],
     });
     console.log(explorerURL({ txSignature: response.signature }));
